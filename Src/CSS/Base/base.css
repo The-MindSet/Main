@@ -1,0 +1,41 @@
+.Wrapper {
+    display: flex;
+}
+
+.Side__Bar {
+    height: 100vh;
+    width: fit-content;
+    border: 1px solid rgb(214, 213, 213);
+    padding-left: 2em;
+}
+
+.Title__Side__Bar {
+    padding: 2em 0.5em;
+}
+
+
+
+.Sub__Boards {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 1em;
+}
+
+
+.Mode__Toggle {
+    display: flex;
+}
+
+.Mode__Hide {
+    display: flex;
+    gap: 10px;
+}
+
+.Header {
+    width: 85%;
+    height: fit-content;
+    border: 1px solid rgb(214, 213, 213);
+
+    display: flex;
+    justify-content: space-between;
+}
