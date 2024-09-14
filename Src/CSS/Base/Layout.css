@@ -21,14 +21,13 @@ body {
     padding: 2em 0.5em;
 }
 
-
-
 .Sub__Boards {
     display: flex;
     gap: 10px;
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
+    font-size: 15px;
+    color: var(--column-color);
 }
-
 
 .Mode__Toggle {
     display: flex;
