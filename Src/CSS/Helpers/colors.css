@@ -1,0 +1,9 @@
+/* main colors */
+
+:root {
+    --main-color: hsl(242 48% 58%);
+    --todo-color: hsl(193 75% 59%);
+    --doning-color:hsl(242 48% 58%);
+    --done: hsl(154 68% 64% );
+    --delete:hsl(0 78% 63%);
+}
