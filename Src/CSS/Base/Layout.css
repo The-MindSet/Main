@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-
-body { 
+body {
     background-color: var(--white-color);
     color: var(--black-color);
-    font-family: "Lato", sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 /* Side__Bar */
@@ -14,49 +14,148 @@ body {
 
 .Side__Bar {
     height: 100vh;
-    width: fit-content;
-    border: 1px solid rgb(214, 213, 213);
-    padding-left: 2em;
+    width: 300px;
+    border-right: 1px solid rgb(214, 213, 213);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .Title__Side__Bar {
-    padding: 2em 0.5em;
+    padding: 2em 0.5em 2em 3rem;
+}
+
+.Board__Title {
+    font-size: 13px;
+    color: #828FA3;
+    letter-spacing: 2px;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    text-transform: uppercase;
 }
 
 .Sub__Boards {
+    text-align: center;
     display: flex;
     gap: 10px;
-    padding-bottom: 1.5em;
-    font-size: var();
-    color: var(--black-color);
+    padding-bottom: 0.5em;
+    padding-left: 2rem;
+    padding-top: 0.5em;
+    margin-right: 1rem;
+    cursor: pointer;
+    color: #828FA3;
+    position: relative;
+}
+
+
+.Sub__Boards:hover {
+    background: #828fa338;
+    color: #635FC7;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+
+.Boards_Img {
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    color: #635FC7;
+}
+
+.Boards__Des {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.Boards__Des__Add {
+    color: #635FC7;
+}
+
+/* Modes */
+
+.Modes {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .Mode__Toggle {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: #F4F7FD;
+    border-radius: 10px;
+    padding: 0.5em 1.1em;
     display: flex;
+    justify-content: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
 }
 
 .Mode__Hide {
     display: flex;
+    align-items: center;
+    padding: 0.5em 0em 0.5rem 2rem;
     gap: 10px;
+    cursor: pointer;
+    color: #828FA3;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.Mode__Hide:hover {
+    background: #828fa338;
+    color: #635FC7;
 }
 
 /* Header */
 
 .Header {
-    width: 85%;
-    height: fit-content;
-    border: 1px solid rgb(214, 213, 213);
-
+    width: 100%;
+    height: 78px;
+    border-bottom: 1px solid rgb(214, 213, 213);
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0px 26px 0px 19.5px;
 }
 
-section {
+.Title__Header {
+    font-size: 30px;
+    color: #000112;
+}
+
+.BTN {
+ display: flex;
+ align-items: center;
+}
+
+.Add {
+    font-size: 16px;
+    background-color: #635FC7;
+    color: #fff;
+    padding: 0.5em 1.1em;
+    border-radius: 50px;
+    font-weight: bold;
+    position: relative;
+}
+
+.Add::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.395);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
 }
 
+HEAD
 
 
 
@@ -141,4 +240,14 @@ select {
     background-color: #e3e4e8;
     color: #000;
     margin-bottom: 15px;
+}
+
+.Add:hover::after {
+    opacity: 1;
+}
+
+.Header__Drop__Choice {
+    padding-left: 1rem;
+    cursor: pointer;
+    position: relative;
 }
