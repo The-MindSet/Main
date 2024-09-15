@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-body { 
+body {
     background-color: var(--white-color);
     color: var(--black-color);
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -23,11 +23,6 @@ body {
 
 .Title__Side__Bar {
     padding: 2em 0.5em 2em 3rem;
-}
-
-.Boards {
-    margin-top: 19.5px;
-    
 }
 
 .Board__Title {
@@ -81,22 +76,23 @@ body {
 
 .Modes {
     margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
 }
 
-
-    .Mode__Toggle {
-        width: 60%;
-        margin: auto;
-        margin-bottom: 2rem;
-        background-color: #F4F7FD;
-        border-radius: 10px;
-        padding: 0.5em 1.1em;
-        display: flex;
-        justify-content: center;
-        justify-content: center;
-        gap: 20px;
-    }
-
+.Mode__Toggle {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: #F4F7FD;
+    border-radius: 10px;
+    padding: 0.5em 1.1em;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
 
 .Mode__Hide {
     display: flex;
@@ -105,6 +101,8 @@ body {
     gap: 10px;
     cursor: pointer;
     color: #828FA3;
+    font-size: 17px;
+    font-weight: 700;
 }
 
 .Mode__Hide:hover {
@@ -115,7 +113,7 @@ body {
 /* Header */
 
 .Header {
-    width: 1620px;
+    width: 100%;
     height: 78px;
     border-bottom: 1px solid rgb(214, 213, 213);
     display: flex;
@@ -129,9 +127,9 @@ body {
     color: #000112;
 }
 
-.BTN__List {
-    display: flex;
-    align-items: center;
+.BTN {
+ display: flex;
+ align-items: center;
 }
 
 .Add {
@@ -145,20 +143,20 @@ body {
 }
 
 .Add::after {
-    content: ''; 
-    position: absolute; 
-    top: 0; 
+    content: '';
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.395); 
-    opacity: 0;  
-    transition: opacity 0.3s ease; 
-    z-index: 1; 
+    background-color: rgba(255, 255, 255, 0.395);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
 }
 
 .Add:hover::after {
-    opacity: 1; 
+    opacity: 1;
 }
 
 .Header__Drop__Choice {
@@ -166,12 +164,3 @@ body {
     cursor: pointer;
     position: relative;
 }
-
-/* Main */
-
-main {
-    width: 80%;
-    display: flex;
-    flex-flow: column nowrap;
-}
-
