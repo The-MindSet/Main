@@ -1,4 +1,4 @@
-/* main colors */
+/* Main colors */
 
 :root {
     --main-color: hsl(242 48% 58%);
@@ -9,4 +9,14 @@
     --white-color: rgb(255, 255, 255);
     --balck-color: rgb(0, 0, 0); 
     --column-color: rgb(233 239 250);
+    --column-dark-color: #21212D;
+    --nv-hr-dark-color: #2c2c38;
+}
+
+body {
+    background-color: var(--white-color);
+}
+
+main {
+    background-color: var(--column-color);
 }
