@@ -131,7 +131,6 @@ body {
 }
 
 .Title__Header {
-  font-size: 30px;
   color: #000112;
 }
 
@@ -172,7 +171,6 @@ section {
   overflow-x: scroll;
   overflow-y: hidden;
   height: 80vh;
-
 }
 
 section .columns {
@@ -192,18 +190,17 @@ section div {
   position: relative;
   margin-right: 1rem;
   flex-shrink: 0;
-
 }
- 
+
 section .last-column {
-  background-color: var(--new-column-color); 
+  background-color: var(--new-column-color);
   display: flex;
   border-radius: 10px;
   flex-shrink: 0;
 }
 
 section .new-column {
-  cursor: pointer; 
+  cursor: pointer;
   display: flex;
   height: fit-content;
   align-self: center;
@@ -215,11 +212,11 @@ section .new-column:hover {
 
 section div:before {
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   border-radius: 50%;
   position: absolute;
-  top: 0.5rem;
+  top: 0.2rem;
   left: -1.7rem;
 }
 
@@ -234,8 +231,6 @@ section .doing-column::before {
 section .done-column::before {
   background-color: var(--done-color);
 }
-
-
 
 /* Goda */
 .task {
@@ -323,4 +318,29 @@ select {
   padding-left: 1rem;
   cursor: pointer;
   position: relative;
+}
+
+@media (max-width: 480px) {
+  .container {
+    /* display: flex;
+    flex-flow: row nowrap; */
+    overflow: auto;
+    /* white-space: nowrap; */
+    display: inline-block;
+  }
+
+  .Header {
+    width: 100%;
+    max-width: fit-content;
+  }
+
+  .Wrapper {
+    max-width: 100%;
+    /* display: inline-block; */
+  }
+
+  section {
+    min-width: 100%;
+    /* display: inline-block; */
+  }
 }
