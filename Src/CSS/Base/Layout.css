@@ -10,6 +10,8 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: start;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 
 /*    MAZEN    */
@@ -168,6 +170,9 @@ section {
   background-color: var(--column-color);
   margin-top: 1em;
   overflow-x: scroll;
+  overflow-y: hidden;
+  height: 80vh;
+
 }
 
 section .columns {
@@ -179,13 +184,14 @@ section .columns {
 section .control-tasks {
   height: 100%;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
 }
 
 section div {
   position: relative;
   margin-right: 1rem;
+  flex-shrink: 0;
 
 }
  
@@ -193,6 +199,7 @@ section .last-column {
   background-color: var(--new-column-color); 
   display: flex;
   border-radius: 10px;
+  flex-shrink: 0;
 }
 
 section .new-column {
@@ -204,9 +211,6 @@ section .new-column {
 
 section .new-column:hover {
   color: var(--main-color);
-  /* display: flex; */
-  /* height: fit-content; */
-  /* align-self: center; */
 }
 
 section div:before {

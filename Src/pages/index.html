@@ -98,14 +98,30 @@
                 <div class="doing-column">DOING</div>
                 <div class="done-column">DONE</div>
                 <div class="last-column">
-                  <div class="new-column">+ New Column</li>
+                  <div class="new-column">+ New Column</div>
                 </div>
-                </div>
+              </div>
             </div>
           </section>
         </div>
       </div>
     </main>
-    <script src="/Src/JS/main.js"></script>
-  </body>
+
+    <!-- Goda -->
+    <script>
+      // التحكم في عرض وإخفاء النموذج (Modal)
+      const modal = document.getElementById("taskModal");
+      const openModalBtn = document.getElementById("openModalBtn");
+      const closeModalBtn = document.getElementById("createTask");
+
+      // لفتح النموذج عند الضغط على زر "Add New Task"
+      openModalBtn.addEventListener("click", () => {
+          modal.style.display = "flex";
+      });
+
+      // إضافة وظيفة لإضافة مهمة جديدة في المستقبل
+      document.getElementById("addSubtask").addEventListener("click", function() {
+          alert('Add a new subtask functionality can be added here.');
+      });
+  </script>  </body>
 </html>
