@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Main/Src/CSS/styles.css">
-    <link rel="shortcut icon" href="/Main/Src/assets/img/favicon-32x32.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link
+      rel="shortcut icon"
+      href="/Main/Src/assets/img/favicon-32x32.png"
+      type="image/x-icon" /> 
     <title>Kanban</title>
-</head>
+    <link rel="stylesheet" href="../CSS/styles.css" />
+  </head>
 
 <body>
 
@@ -21,10 +23,19 @@
                 <div class="Title__Side__Bar">
                     <img class="Kanban__Logo" src="/Main/Src/assets/Icons/logo-dark.svg">
                 </div>
+  <body>
+    <main>
+         <div class="Wrapper">
+          <aside class="Side__Bar">
+            <div class="Title__Side__Bar">
+              <img class="Light__Logo" src="/Main/Src/assets/Icons/logo-dark.svg" />
+            </div>
 
                 <div class="Boards">
 
                     <h4 class="Board__Title">All Boards (3)</h4>
+            <div class="Boards">
+              <h4 class="Board__Title">All Boards (3)</h4>
 
                     <div class="Sub__Boards">
                         <img class="Boards_Img" src="/Main/Src/assets/Icons/icon-board.svg">
@@ -32,6 +43,12 @@
                         <p class="Boards__Des">Platform Launch</p>
 
                     </div>
+              <div class="Sub__Boards">
+                <img src="/Main/Src/assets/Icons/icon-board.svg" />
+                <a href="">
+                  <li>Platform Launch</li>
+                </a>
+              </div>
 
                     <div class="Sub__Boards">
                         <img class="Boards_Img" src="/Main/Src/assets/Icons/icon-board.svg">
@@ -39,6 +56,12 @@
                         <p class="Boards__Des">Marketing Plan</p>
 
                     </div>
+              <div class="Sub__Boards">
+                <img src="/Main/Src/assets/Icons/icon-board.svg" />
+                <a href="">
+                  <li>Marketing Plan</li>
+                </a>
+              </div>
 
                     <div class="Sub__Boards">
                         <img class="Boards_Img" src="/Main/Src/assets/Icons/icon-board.svg">
@@ -53,9 +76,21 @@
                         <p class="Boards__Des Boards__Des__Add ">+ Create New Board</p>
 
                     </div>
+              <div class="Sub__Boards">
+                <img src="/Main/Src/assets/Icons/icon-board.svg" />
+                <a href="">
+                  <li>Roadmap</li>
+                </a>
+              </div>
 
                 </div>
 
+              <div class="Sub__Boards">
+                <img src="/Main/Src/assets/Icons/icon-board.svg" />
+                <a href="">
+                  <li>+ Create New Board</li>
+                </a>
+              </div>
             </div>
 
             <div class="Modes">
@@ -68,49 +103,42 @@
 
                     <img src="/Main/Src/assets/Icons/icon-dark-theme.svg">
 
-                </div>
-
-                <div class="Mode__Hide">
-                    <img src="/Main/Src/assets/Icons/icon-hide-sidebar.svg">
-                    <h3>Hide Sidebar</h3>
-                </div>
-
+              <div class="Mode__Hide">
+                <img src="/Main/Src/assets/Icons/icon-hide-sidebar.svg" />
+                <h3>Hide Sidebar</h3>
+              </div>
             </div>
+          </aside>
 
-        </aside>
-
-        <header class="Header">
-
+          <header class="Header">
             <h1 class="Title__Header">Platform Launch</h1>
 
             <div class="Check__List">
 
                 <button class="Add">+ Add New Task</button>
+            <div class="BTN">
+              <button class="Add">+ Add New Task</button>
 
                 <img class="Header__Drop__Choice" src="/Main/Src/assets/Icons/icon-vertical-ellipsis.svg">
 
+              <img src="/Main/Src/assets/Icons/icon-vertical-ellipsis.svg" />
             </div>
 
         </header>
+          </header>
 
-        <!-- <main>
+          <section>
             <div class="columns">
-                <ul class="control-tasks">
-                    <li>to</li>
-                    <li class="add-colulmn">+ New Column</li>
-                </ul>
+              <div class="control-tasks">
+                <div>TODO</div>
+                <div>DOING</div>
+                <div>DONE</div>
+                <div>+ New Column</li>
+                </div>
             </div>
-        </main> -->
-
-    </div>
-
-
-
-
-
-
+          </section>
+        </div>
+    </main>
     <script src="/Src/JS/main.js" defer> </script>
-
-</body>
-
+  </body>
 </html>

@@ -175,6 +175,3 @@ main {
     flex-flow: column nowrap;
 }
 
-main .columns ul:hover {
-    color: var(--main-color);    
-}
