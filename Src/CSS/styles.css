@@ -1,6 +1,5 @@
 /* Import CSSs */
 
-/* Import Base */
 @import './Base/index.css';
-/* Import Helpers */
+
 @import './Helpers/index.css';

@@ -17,3 +17,8 @@ li {
 a {
     text-decoration: none;
 }
+
+button {
+    border-style: none;
+    cursor: pointer;
+}

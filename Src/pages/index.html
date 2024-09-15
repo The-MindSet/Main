@@ -13,42 +13,47 @@
 
     <div class="Wrapper">
 
+
         <aside class="Side__Bar">
 
-            <div class="Title__Side__Bar">
-                <img class="Light__Logo" src="/Main/Src/assets/Icons/logo-dark.svg">
-            </div>
+            <div class="Container">
 
-            <div class="Boards">
-
-                <h4 class="Board__Title">All Boards (3)</h4>
-
-                <div class="Sub__Boards">
-                    <img src="/Main/Src/assets/Icons/icon-board.svg">
-                    <a href="">
-                        <li>Platform Launch</li>
-                    </a>
+                <div class="Title__Side__Bar">
+                    <img class="Kanban__Logo" src="/Main/Src/assets/Icons/logo-dark.svg">
                 </div>
 
-                <div class="Sub__Boards">
-                    <img src="/Main/Src/assets/Icons/icon-board.svg">
-                    <a href="">
-                        <li>Marketing Plan</li>
-                    </a>
-                </div>
+                <div class="Boards">
 
-                <div class="Sub__Boards">
-                    <img src="/Main/Src/assets/Icons/icon-board.svg">
-                    <a href="">
-                        <li>Roadmap</li>
-                    </a>
-                </div>
+                    <h4 class="Board__Title">All Boards (3)</h4>
 
-                <div class="Sub__Boards">
-                    <img src="/Main/Src/assets/Icons/icon-board.svg">
-                    <a href="">
-                        <li>+ Create New Board</li>
-                    </a>
+                    <div class="Sub__Boards">
+                        <img class="Boards_Img" src="/Main/Src/assets/Icons/icon-board.svg">
+
+                        <p class="Boards__Des">Platform Launch</p>
+
+                    </div>
+
+                    <div class="Sub__Boards">
+                        <img class="Boards_Img" src="/Main/Src/assets/Icons/icon-board.svg">
+
+                        <p class="Boards__Des">Marketing Plan</p>
+
+                    </div>
+
+                    <div class="Sub__Boards">
+                        <img class="Boards_Img" src="/Main/Src/assets/Icons/icon-board.svg">
+
+                        <p class="Boards__Des">Roadmap</p>
+
+                    </div>
+
+                    <div class="Sub__Boards Boards__Des__Add">
+                        <img class="Boards_Img" src="/Main/Src/assets/Icons/icon-board.svg">
+
+                        <p class="Boards__Des Boards__Des__Add ">+ Create New Board</p>
+
+                    </div>
+
                 </div>
 
             </div>
@@ -56,9 +61,13 @@
             <div class="Modes">
 
                 <div class="Mode__Toggle">
+
                     <img src="/Main/Src/assets/Icons/icon-light-theme.svg">
-                    <button class="modeToggle"></button>
+
+                    <input class="modeToggle" type="checkbox" name="" id="">
+
                     <img src="/Main/Src/assets/Icons/icon-dark-theme.svg">
+
                 </div>
 
                 <div class="Mode__Hide">
@@ -74,31 +83,33 @@
 
             <h1 class="Title__Header">Platform Launch</h1>
 
-            <div class="BTN">
+            <div class="Check__List">
 
                 <button class="Add">+ Add New Task</button>
 
-                <img src="/Main/Src/assets/Icons/icon-vertical-ellipsis.svg">
+                <img class="Header__Drop__Choice" src="/Main/Src/assets/Icons/icon-vertical-ellipsis.svg">
 
             </div>
+
         </header>
 
-
+        <!-- <main>
+            <div class="columns">
+                <ul class="control-tasks">
+                    <li>to</li>
+                    <li class="add-colulmn">+ New Column</li>
+                </ul>
+            </div>
+        </main> -->
 
     </div>
 
-    <main>
-        <div class="columns">
-            <ul class="control-tasks">
-                <li>to</li>
-                <li class="add-colulmn">+ New Column</li>
-            </ul>
-        </div>
-    </main>
 
 
 
-    <script src="/Src/JS/main.js"> </script>
+
+
+    <script src="/Src/JS/main.js" defer> </script>
 
 </body>
 
