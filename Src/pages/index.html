@@ -1,105 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      rel="shortcut icon"
+      href="/Main/Src/assets/img/favicon-32x32.png"
+      type="image/x-icon" /> -->
+    <link rel="stylesheet" href="./../CSS/Base/styles.css">
+      <title>Kanban</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Main/Src/CSS/styles.css">
-    <link rel="shortcut icon" href="/Main/Src/assets/img/favicon-32x32.png" type="image/x-icon">
-    <title>Kanban</title>
-</head>
-
-<body>
-
+  <body>
     <div class="Wrapper">
-
-        <aside class="Side__Bar">
-
-            <div class="Title__Side__Bar">
-                <img class="Light__Logo" src="/Main/Src/assets/Icons/logo-dark.svg">
-            </div>
-
-            <div class="Boards">
-
-                <h4 class="Board__Title">All Boards (3)</h4>
-
-                <div class="Sub__Boards">
-                    <img src="/Main/Src/assets/Icons/icon-board.svg">
-                    <a href="">
-                        <li>Platform Launch</li>
-                    </a>
-                </div>
-
-                <div class="Sub__Boards">
-                    <img src="/Main/Src/assets/Icons/icon-board.svg">
-                    <a href="">
-                        <li>Marketing Plan</li>
-                    </a>
-                </div>
-
-                <div class="Sub__Boards">
-                    <img src="/Main/Src/assets/Icons/icon-board.svg">
-                    <a href="">
-                        <li>Roadmap</li>
-                    </a>
-                </div>
-
-                <div class="Sub__Boards">
-                    <img src="/Main/Src/assets/Icons/icon-board.svg">
-                    <a href="">
-                        <li>+ Create New Board</li>
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="Modes">
-
-                <div class="Mode__Toggle">
-                    <img src="/Main/Src/assets/Icons/icon-light-theme.svg">
-                    <button class="modeToggle"></button>
-                    <img src="/Main/Src/assets/Icons/icon-dark-theme.svg">
-                </div>
-
-                <div class="Mode__Hide">
-                    <img src="/Main/Src/assets/Icons/icon-hide-sidebar.svg">
-                    <h3>Hide Sidebar</h3>
-                </div>
-
-            </div>
-
-        </aside>
-
-        <header class="Header">
-
-            <h1 class="Title__Header">Platform Launch</h1>
-
-            <div class="BTN">
-
-                <button class="Add">+ Add New Task</button>
-
-                <img src="/Main/Src/assets/Icons/icon-vertical-ellipsis.svg">
-
-            </div>
-        </header>
-
-
-
-    </div>
-
-    <main>
-        <div class="columns">
-            <ul class="control-tasks">
-                <li>to</li>
-                <li class="add-colulmn">+ New Column</li>
-            </ul>
+      <aside class="Side__Bar">
+        <div class="Title__Side__Bar">
+          <img class="Light__Logo" src="/Main/Src/assets/Icons/logo-dark.svg" />
         </div>
-    </main>
 
+        <div class="Boards">
+          <h4 class="Board__Title">All Boards (3)</h4>
 
+          <div class="Sub__Boards">
+            <img src="/Main/Src/assets/Icons/icon-board.svg" />
+            <a href="">
+              <li>Platform Launch</li>
+            </a>
+          </div>
 
-    <script src="/Src/JS/main.js"> </script>
+          <div class="Sub__Boards">
+            <img src="/Main/Src/assets/Icons/icon-board.svg" />
+            <a href="">
+              <li>Marketing Plan</li>
+            </a>
+          </div>
 
-</body>
+          <div class="Sub__Boards">
+            <img src="/Main/Src/assets/Icons/icon-board.svg" />
+            <a href="">
+              <li>Roadmap</li>
+            </a>
+          </div>
 
+          <div class="Sub__Boards">
+            <img src="/Main/Src/assets/Icons/icon-board.svg" />
+            <a href="">
+              <li>+ Create New Board</li>
+            </a>
+          </div>
+        </div>
+
+        <div class="Modes">
+          <div class="Mode__Toggle">
+            <img src="/Main/Src/assets/Icons/icon-light-theme.svg" />
+            <button class="modeToggle"></button>
+            <img src="/Main/Src/assets/Icons/icon-dark-theme.svg" />
+          </div>
+
+          <div class="Mode__Hide">
+            <img src="/Main/Src/assets/Icons/icon-hide-sidebar.svg" />
+            <h3>Hide Sidebar</h3>
+          </div>
+        </div>
+      </aside>
+
+      <header class="Header">
+        <h1 class="Title__Header">Platform Launch</h1>
+
+        <div class="BTN">
+          <button class="Add">+ Add New Task</button>
+
+          <img src="/Main/Src/assets/Icons/icon-vertical-ellipsis.svg" />
+        </div>
+      </header>
+
+      <main>
+        <div class="columns">
+          <ul class="control-tasks">
+            <li>TODO</li>
+            <li>DOING</li>
+            <li>DONE</li>
+            <li class="add-colulmn">+ New Column</li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    <script src="/Src/JS/main.js"></script>
+  </body>
 </html>

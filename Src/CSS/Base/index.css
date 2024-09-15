@@ -1,11 +1,11 @@
-@import './reset.css';
 /* Global RESETS */
+@import './reset.css';
 
-@import './base.css';
 /* Base */
+@import './base.css';
 
-@import './Layout.css';
 /* Header, Fotter, MAin, etc.. */
+@import './Layout.css';
 
-@import './Typography.css';
 /* Typography */
+@import './Typography.css';
