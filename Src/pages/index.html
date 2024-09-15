@@ -7,11 +7,21 @@
     <link rel="shortcut icon" href="/Main/Src/assets/img/favicon-32x32.png" type="image/x-icon" />
     <title>Kanban</title>
     <link rel="stylesheet" href="../CSS/styles.css" />
-</head>
-
+  </head>
+  
   <body>
     <main>
-         <div class="Wrapper">
+      <div class="container">
+        <header class="Header">
+          <h1 class="Title__Header">Platform Launch</h1>
+        
+          <div class="BTN">
+            <button class="Add">+ Add New Task</button>
+        
+            <img src="./../assets/Icons/icon-vertical-ellipsis.svg" />
+          </div>
+        </header>
+        <div class="Wrapper">
           <aside class="Side__Bar">
             <div class="Title__Side__Bar">
               <img class="Light__Logo" src="./../assets/Icons/logo-dark.svg" />
@@ -50,28 +60,28 @@
 
                         </div>
 
+                        <div class="Sub__Boards">
+                          <img src="./../assets/Icons/icon-board.svg" />
+                          <a href="">
+                            <li>+ Create New Board</li>
+                          </a>
+                        </div>
+                      </div>
+                      
+                    <div class="Modes">
+        
+                        <div class="Mode__Toggle">
+        
+                            <img src="./../assets/Icons/icon-light-theme.svg">
+        
+                            <input class="modeToggle" type="checkbox" name="" id="">
+        
+                            <img src="./../assets/Icons/icon-light-theme.svg">
+        
+                        </div>
 
                     </div>
 
-              <div class="Sub__Boards">
-                <img src="./../assets/Icons/icon-board.svg" />
-                <a href="">
-                  <li>+ Create New Board</li>
-                </a>
-              </div>
-            </div>
-              
-            <div class="Modes">
-
-                <div class="Mode__Toggle">
-
-                    <img src="./../assets/Icons/icon-light-theme.svg">
-
-                    <input class="modeToggle" type="checkbox" name="" id="">
-
-                    <img src="./../assets/Icons/icon-light-theme.svg">
-
-                </div>
 
               <div class="Mode__Hide">
                 <img src="./../assets/Icons/icon-hide-sidebar.svg" />
@@ -80,27 +90,21 @@
             </div>
           </aside>
 
-          <header class="Header">
-            <h1 class="Title__Header">Platform Launch</h1>
-
-            <div class="BTN">
-              <button class="Add">+ Add New Task</button>
-
-              <img src="./../assets/Icons/icon-vertical-ellipsis.svg" />
-            </div>
-          </header>
 
           <section>
             <div class="columns">
               <div class="control-tasks">
-                <div>TODO</div>
-                <div>DOING</div>
-                <div>DONE</div>
-                <div>+ New Column</li>
+                <div class="todo-column">TODO</div>
+                <div class="doing-column">DOING</div>
+                <div class="done-column">DONE</div>
+                <div class="last-column">
+                  <div class="new-column">+ New Column</li>
+                </div>
                 </div>
             </div>
           </section>
         </div>
+      </div>
     </main>
     <script src="/Src/JS/main.js"></script>
   </body>

@@ -5,110 +5,105 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+div {
   font-weight: 700;
 }
 
-div,
 li {
-    font-weight: 400;
-
+  font-weight: 400;
 }
 
-/* h1 {
-    font-size: 2.5rem;
-} */
+h1 {
+  font-size: 2.5rem;
+}
 
 h2 {
-    font-size: 2.2rem;
+  font-size: 2.2rem;
 }
 
 h3 {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 h4 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 div {
-    font-size: 1.5rem;
+  font-size: 1.2rem;
 }
- 
-/* p {
-    font-size: 1.5rem;
-} */
- 
+
+p {
+  font-size: 1.5rem;
+}
+
 li {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
-@media (max-width: 768px) {
-   body {
-    font-size: 15px;
-   }
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
 
-    h1 {
-        font-size: 2.4rem;
-    }
-    
-    h2 {
-        font-size: 2.1rem;
-    }
-    
-    h3 {
-        font-size: 1.7rem;
-    }
-    
-    h4 {
-        font-size: 1.3rem;
-    }
-     
-    div {
-        font-size: 1.3rem;
-    }
-    p {
-        font-size: 1.3rem;
-    }
-     
-    li {
-        font-size: 1.3rem;
-    }
-    
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  div {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+
+  li {
+    font-size: 1.2rem;
+  }
 }
 @media (max-width: 480px) {
-   body {
-    font-size: 14px;
-   }
+  body {
+    font-size: 13px;
+  }
 
-    h1 {
-        font-size: 2.2rem;
-    }
-    
-    h2 {
-        font-size: 2rem;
-    }
-    
-    h3 {
-        font-size: 1.5rem;
-    }
-    
-    h4 {
-        font-size: 1.1rem;
-    }
-     
-    div {
-        font-size: 1.1rem;
-    }
-    
-    p {
-        font-size: 1.1rem;
-    }
-     
-    li {
-        font-size: 1.1rem;
-    }
-    
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  div {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  li {
+    font-size: 1rem;
+  }
 }
-
-

@@ -1,253 +1,322 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 body {
-    background-color: var(--white-color);
-    color: var(--black-color);
-    font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-/* Side__Bar */
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+}
 
+/*    MAZEN    */
+
+/* Side__Bar */
 .Wrapper {
-    display: flex;
+  /* display: flex; */
+  max-width: 22%;
 }
 
 .Side__Bar {
-    height: 100vh;
-    width: 300px;
-    border-right: 1px solid rgb(214, 213, 213);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 100vh;
+  width: 100%;
+  border-right: 1px solid rgb(214, 213, 213);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .Title__Side__Bar {
-    padding: 2em 0.5em 2em 3rem;
+  padding: 2em 0.5em 2em 3rem;
 }
 
 .Board__Title {
-    font-size: 13px;
-    color: #828FA3;
-    letter-spacing: 2px;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    text-transform: uppercase;
+  font-size: 13px;
+  color: #828fa3;
+  letter-spacing: 2px;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  text-transform: uppercase;
 }
 
 .Sub__Boards {
-    text-align: center;
-    display: flex;
-    gap: 10px;
-    padding-bottom: 0.5em;
-    padding-left: 2rem;
-    padding-top: 0.5em;
-    margin-right: 1rem;
-    cursor: pointer;
-    color: #828FA3;
-    position: relative;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  padding-bottom: 0.5em;
+  padding-left: 2rem;
+  padding-top: 0.5em;
+  margin-right: 1rem;
+  cursor: pointer;
+  color: #828fa3;
+  position: relative;
 }
-
 
 .Sub__Boards:hover {
-    background: #828fa338;
-    color: #635FC7;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+  background: #828fa338;
+  color: #635fc7;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
-
 .Boards_Img {
-    width: 15px;
-    height: 15px;
-    margin-top: 5px;
-    color: #635FC7;
+  width: 15px;
+  height: 15px;
+  margin-top: 5px;
+  color: #635fc7;
 }
 
 .Boards__Des {
-    font-size: 17px;
-    font-weight: 700;
+  font-size: 17px;
+  font-weight: 700;
 }
 
 .Boards__Des__Add {
-    color: #635FC7;
+  color: #635fc7;
 }
 
 /* Modes */
 
 .Modes {
-    margin-bottom: 3rem;
-    display: flex;
-    flex-direction: column;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .Mode__Toggle {
-    width: 60%;
-    margin: auto;
-    margin-bottom: 2rem;
-    background-color: #F4F7FD;
-    border-radius: 10px;
-    padding: 0.5em 1.1em;
-    display: flex;
-    justify-content: center;
-    justify-content: center;
-    gap: 20px;
-    position: relative;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 2rem;
+  background-color: #f4f7fd;
+  border-radius: 10px;
+  padding: 0.5em 1.1em;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
 }
 
 .Mode__Hide {
-    display: flex;
-    align-items: center;
-    padding: 0.5em 0em 0.5rem 2rem;
-    gap: 10px;
-    cursor: pointer;
-    color: #828FA3;
-    font-size: 17px;
-    font-weight: 700;
+  display: flex;
+  align-items: center;
+  padding: 0.5em 0em 0.5rem 2rem;
+  gap: 10px;
+  cursor: pointer;
+  color: #828fa3;
+  font-size: 17px;
+  font-weight: 700;
 }
 
 .Mode__Hide:hover {
-    background: #828fa338;
-    color: #635FC7;
+  background: #828fa338;
+  color: #635fc7;
 }
 
 /* Header */
 
 .Header {
-    width: 100%;
-    height: 78px;
-    border-bottom: 1px solid rgb(214, 213, 213);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 26px 0px 19.5px;
+  width: 100%;
+  height: 78px;
+  border-bottom: 1px solid rgb(214, 213, 213);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 26px 0px 19.5px;
 }
 
 .Title__Header {
-    font-size: 30px;
-    color: #000112;
+  font-size: 30px;
+  color: #000112;
 }
 
 .BTN {
- display: flex;
- align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .Add {
-    font-size: 16px;
-    background-color: #635FC7;
-    color: #fff;
-    padding: 0.5em 1.1em;
-    border-radius: 50px;
-    font-weight: bold;
-    position: relative;
+  font-size: 16px;
+  background-color: #635fc7;
+  color: #fff;
+  padding: 0.5em 1.1em;
+  border-radius: 50px;
+  font-weight: bold;
+  position: relative;
 }
 
 .Add::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.395);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.395);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
 }
 
-HEAD
+/*  MOSTAFA  */
+section {
+  width: 78%;
+  color: rgba(0, 0, 0, 0.4);
+  background-color: var(--column-color);
+  margin-top: 1em;
+  overflow-x: scroll;
+}
 
+section .columns {
+  width: 100%;
+  height: 80%;
+  padding: 2rem 4rem;
+}
 
+section .control-tasks {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
 
+section div {
+  position: relative;
+  margin-right: 1rem;
 
+}
+ 
+section .last-column {
+  background-color: var(--new-column-color); 
+  display: flex;
+  border-radius: 10px;
+}
+
+section .new-column {
+  cursor: pointer; 
+  display: flex;
+  height: fit-content;
+  align-self: center;
+}
+
+section .new-column:hover {
+  color: var(--main-color);
+  /* display: flex; */
+  /* height: fit-content; */
+  /* align-self: center; */
+}
+
+section div:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.5rem;
+  left: -1.7rem;
+}
+
+section .todo-column::before {
+  background-color: var(--todo-color);
+}
+
+section .doing-column::before {
+  background-color: var(--doing-color);
+}
+
+section .done-column::before {
+  background-color: var(--done-color);
+}
 
 
 
 /* Goda */
 .task {
-    background-color: #e3e4e8;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 15px;
+  background-color: #e3e4e8;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
 }
 
 .task h3 {
-    font-size: 1em;
-    margin-bottom: 5px;
+  font-size: 1em;
+  margin-bottom: 5px;
 }
 
 .task p {
-    font-size: 0.9em;
-    color: #666;
+  font-size: 0.9em;
+  color: #666;
 }
 
 button {
-    background-color: #6f56e8;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-    
+  background-color: #6f56e8;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
 }
-#openModalBtn{
-    margin-left:1000px;
+#openModalBtn {
+  margin-left: 1000px;
 }
 button:hover {
-    background-color: #5844c9;
+  background-color: #5844c9;
 }
 
 .modal {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
 }
 
 h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 input[type="text"],
 textarea,
 select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 #addSubtask {
-    background-color: #e3e4e8;
-    color: #000;
-    margin-bottom: 15px;
+  background-color: #e3e4e8;
+  color: #000;
+  margin-bottom: 15px;
 }
 
 .Add:hover::after {
-    opacity: 1;
+  opacity: 1;
 }
 
 .Header__Drop__Choice {
-    padding-left: 1rem;
-    cursor: pointer;
-    position: relative;
+  padding-left: 1rem;
+  cursor: pointer;
+  position: relative;
 }
