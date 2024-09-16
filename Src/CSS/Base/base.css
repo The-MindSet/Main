@@ -16,7 +16,7 @@
 
  a:hover {
     color: var(--main-color);
-    text-decoration: underline;
+    /* text-decoration: underline; */
     /* text-underline-offset: 5px; */
  }
 
