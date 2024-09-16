@@ -31,7 +31,7 @@ body {
 .Side__Bar {
   height: 100vh;
   /* width: 100%; */
-  /* border-right: 1px solid rgb(214, 213, 213); */
+  border-right: 1px solid rgb(214, 213, 213, 0.7);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -39,6 +39,11 @@ body {
 
 .Title__Side__Bar {
   padding: 2em 0.5em 2em 3rem;
+}
+
+.Boards {
+  margin-top: 6rem;
+  margin-left: -2.5rem;
 }
 
 .Board__Title {
@@ -88,15 +93,15 @@ body {
 /* Modes */
 
 .Modes {
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
   display: flex;
   flex-direction: column;
 }
 
 .Mode__Toggle {
   width: 60%;
-  margin: auto;
-  margin-bottom: 2rem;
+  margin: 1.5rem;
+  /* margin-bottom: 2rem; */
   background-color: #f4f7fd;
   border-radius: 10px;
   padding: 0.5em 1.1em;
@@ -110,7 +115,7 @@ body {
 .Mode__Hide {
   display: flex;
   align-items: center;
-  padding: 0.5em 0em 0.5rem 2rem;
+  padding: 0.5em 0em 0.5rem 1rem;
   gap: 10px;
   cursor: pointer;
   color: #828fa3;
@@ -124,7 +129,7 @@ body {
 }
 
 .page-logo {
-  margin: -3rem 0 -3.5rem -2rem;
+  margin: -3.5rem 0 -3.5rem -2rem;
 }
 
 .page-logo img {
@@ -144,13 +149,15 @@ body {
   grid-area: header;
   /* border-bottom: 1px solid rgb(214, 213, 213); */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 0px 26px 0px 19.5px;
+  padding: 1.3rem 0;
 }
 
 .Title__Header {
   color: #000112;
+  margin-right: 25rem;
+  font-weight: 700;
 }
 
 .BTN {
