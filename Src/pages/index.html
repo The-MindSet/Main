@@ -96,17 +96,18 @@
                 <div class="Mode__Hide">
                 <img src="./../assets/Icons/icon-hide-sidebar.svg" />
                 <h4>Hide Sidebar</h4>
-                </div>
-                </div>
-                </aside>
-                </div>
-                <header class="Header">
-                <h5 class="Title__Header">Platform Launch</h5>
-                
-                <div class="BTN">
-                <button class="Add">+ Add New Task</button>
-                
-                <img src="./../assets/Icons/icon-vertical-ellipsis.svg" />
+              </div>
+            </div>
+          </aside>
+        </div>
+        <header class="Header">
+          <h5 class="Title__Header">Platform Launch</h5>
+          <img class="img-1" src="./../assets/img/images-3.png" alt="chevron-down-icon">
+          <div class="BTN">
+            <button class="Add">+ Add New Task</button>
+            
+            <img class="img-2" src="./../assets/Icons/icon-3-add-task-mobile-2d3799f1.svg" alt="add-icon">
+            <img class="img-3" src="./../assets/Icons/icon-vertical-ellipsis.svg" />
               </div>
             </header>
 
@@ -124,55 +125,18 @@
                 </div>
             </section>
           </div>
+    
+          <div class="toggle-container">
+            <input type="checkbox" id="toggle" class="toggle-checkbox">
+            <label for="toggle" class="toggle-label">
+    
+                <div class="toggle-ball"></div>
+                <i class="fas fa-sun icon"></i>
+            </label>
+        </div>
     </main>
-              <!-- <img class="Light__Logo" src="./../assets/Icons/logo-dark.svg" /> -->
-            <!-- </div> -->
-            
-  
-<!--               
-              <div class="Sub__Boards">
-                <img class="Boards_Img" src="./../assets/Icons/icon-board.svg">
-                
-                <p class="Boards__Des">Platform Launch</p>
-                
-              
-              
-              <div class="Sub__Boards">
-                <img class="Boards_Img" src="./../assets/Icons/icon-board.svg">
-                
-                <p class="Boards__Des">Marketing Plan</p>
-                
-              </div>
-            </head>  -->
-            <!-- 
-              <body>
-                <main>
-                  <div class="container"> -->
-                    <!-- <header class="Header">
-                      <h1 class="Title__Header">Platform Launch</h1>
-                      
-                      <div class="BTN">
-                    <button class="Add">+ Add New Task</button>
+   
 
-                    <img src="./../assets/Icons/icon-vertical-ellipsis.svg" />
-                </div>
-            </header> -->
-            <!-- <div class="Wrapper"> -->
-                <!-- <aside class="Side__Bar"> -->
-                    <!-- <div class="Title__Side__Bar">
-                        <img class="Light__Logo" src="./../assets/Icons/logo-dark.svg" />
-                    </div> -->
-
-                        <!-- <h4 class="Board__Title">All Boards (3)</h4> -->
-
-          <!-- 
-                    <div class="Mode__Hide">
-                        <img src="./../assets/Icons/icon-hide-sidebar.svg" />
-                        <h3>Hide Sidebar</h3>
-                    </div> -->
-            <!-- </div>
-            </aside> -->
-        <!-- </div> -->
 
     <!-- Goda -->
     <script>
@@ -189,6 +153,18 @@
         // إضافة وظيفة لإضافة مهمة جديدة في المستقبل
         document.getElementById("addSubtask").addEventListener("click", function () {
             alert('Add a new subtask functionality can be added here.');
+       
+           
+        const toggleCheckbox = document.getElementById('toggle');
+
+        toggleCheckbox.addEventListener('change', function() {
+          if (this.checked) {
+              document.body.style.backgroundColor = '#333'; 
+          } else {
+          
+              document.body.style.backgroundColor = '#f0f0f0'; 
+         }
+        });
         });
     </script>
 </body>
