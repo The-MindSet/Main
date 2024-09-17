@@ -90,7 +90,7 @@ body {
 
 .Mode__Toggle {
   width: 60%;
-  margin: 1.5rem;
+  margin: 1.5rem 0;
   background-color: var(--column-color);
   border-radius: 10px;
   padding: 0.5em 1.1em;
@@ -110,6 +110,7 @@ body {
   color: #828fa3;
   font-size: 1rem;
   font-weight: 700;
+  margin: 0rem -2rem;
 }
 
 .Mode__Hide:hover {
@@ -452,7 +453,7 @@ select {
     z-index: 555;
     background-color: var(--white-color);
     flex: 0 0 100%;
-    max-width: 100%;
+    min-width: 100%;
     background-image: url(../../assets/Icons/icon-2-add-task-mobile.svg);
     background-repeat: no-repeat;
     background-position: 10px 35px;
@@ -508,13 +509,13 @@ select {
   .Mode__Toggle {
     width: fit-content;
     display: flex;
-    margin: 0 0 -2rem 2rem;
+    margin: 1rem 0px -1rem -1rem;
   }
 
   .Mode__Hide {
     width: fit-content;
     display: flex;
-    margin: 2rem 0 0rem 1rem;
+    margin: 2rem 0px 0rem -2.5rem;
   }
 
   section {
@@ -549,7 +550,7 @@ select {
     background-image: url(../../assets/Icons/icon-2-add-task-mobile.svg);
     background-repeat: no-repeat;
     background-position: 20px;
-    padding: 1rem 2rem;
+    padding: 1rem 0rem 1rem 2rem;
   }
 
   .img-1,
