@@ -9,136 +9,94 @@
     <link rel="stylesheet" href="../CSS/styles.css" />
   </head>  
   <body>
-    <main>
 
+    <main>
+      
       <!-- Container -->
       <div class="container">
 
         <!-- Aside -->
         <div class="Wrapper">
-
           <aside class="Side__Bar">
-          
             <div class="Title__Side__Bar">
-          
               <div class="page-logo">
-          
                 <img src="./../assets/Icons/icon-2-add-task-mobile.svg" alt="kanban-logo">
                 <h2>Kanban</h2>
-          
               </div>
-          
               <div class="Boards">
-          
                 <div>
                     <h4 class="Board__Title">All Boards (3)</h4>
                 </div>
-          
                 <div class="Sub__Boards">
-          
                   <img class="Boards_Img" src="./../assets/Icons/icon-board.svg">      
                   <p class="Boards__Des">Platform Launch</p>
-                
                 </div>
-                
-                
                 <div class="Sub__Boards">
                     <img class="Boards_Img" src="./../assets/Icons/icon-board.svg">
-                
                     <p class="Boards__Des">Marketing Plan</p>
-                
                 </div>
-                
-                
                 <div class="Sub__Boards">
                     <img class="Boards_Img" src="./../assets/Icons/icon-board.svg">
-                
                     <p class="Boards__Des">Roadmap</p>
-                
                 </div>
-                
                 <div class="Sub__Boards Boards__Des__Add">
                     <img class="Boards_Img" src="./../assets/Icons/icon-board.svg">
-                    
                     <p class="Boards__Des Boards__Des__Add ">+ Create New Board</p>
-                    
-                  </div>
-                  
-                  <!-- <div class="Sub__Boards">
-                    <img src="./../assets/Icons/icon-board.svg" />
-                    <a href="">
-                      <li>+ Create New Board</li>
-                    </a>
-                  </div> -->
-                <!-- </div>                        
-                <div class="Modes">
-                  
-                  <div class="Mode__Toggle">
-                    
                 </div>
-                 -->
 
                  <!-- Modes -->
                 <div class="Modes">
-                
                   <div class="Mode__Toggle">
-                  
                       <img src="./../assets/Icons/icon-light-theme.svg">
-                  
                       <input class="modeToggle" type="checkbox" name="" id="">
-                  
                       <img src="./../assets/Icons/icon-light-theme.svg">
-                  
                   </div>
-                  
-                </div>                    
-                
+                </div>                      
                 <div class="Mode__Hide">
-                <img src="./../assets/Icons/icon-hide-sidebar.svg" />
-                <h4>Hide Sidebar</h4>
-              </div>
+                    <img src="./../assets/Icons/icon-hide-sidebar.svg" />
+                    <h4>Hide Sidebar</h4>
+                  </div>
             </div>
           </aside>
         </div>
+
+        <!-- Header -->
         <header class="Header">
           <h5 class="Title__Header">Platform Launch</h5>
           <img class="img-1" src="./../assets/img/images-3.png" alt="chevron-down-icon">
           <div class="BTN">
-            <button class="Add">+ Add New Task</button>
-            
+            <button class="Add">+ Add New Task</button>  
             <img class="img-2" src="./../assets/Icons/icon-3-add-task-mobile-2d3799f1.svg" alt="add-icon">
             <img class="img-3" src="./../assets/Icons/icon-vertical-ellipsis.svg" />
-              </div>
-            </header>
+          </div>
+        </header>
 
-            <!-- Section -->
-            <section>
-                <div class="columns">
-                    <div class="control-tasks">
-                        <div class="todo-column">TODO</div>
-                        <div class="doing-column">DOING</div>
-                        <div class="done-column">DONE</div>
-                        <div class="last-column">
-                            <div class="new-column">+ New Column</div>
-                        </div>
+        <!-- Section -->
+        <section>
+            <div class="columns">
+                <div class="control-tasks">
+                    <div class="todo-column">TODO</div>
+                    <div class="doing-column">DOING</div>
+                    <div class="done-column">DONE</div>
+                    <div class="last-column">
+                        <div class="new-column">+ New Column</div>
                     </div>
                 </div>
-            </section>
-          </div>
-    
-          <div class="toggle-container">
-            <input type="checkbox" id="toggle" class="toggle-checkbox">
-            <label for="toggle" class="toggle-label">
-    
-                <div class="toggle-ball"></div>
-                <i class="fas fa-sun icon"></i>
-            </label>
+            </div>
+        </section>
+
+        <!-- Toggle Container  -->
+        <div class="toggle-container">
+          <input type="checkbox" id="toggle" class="toggle-checkbox">
+          <label for="toggle" class="toggle-label">
+              <div class="toggle-ball"></div>
+              <i class="fas fa-sun icon"></i>
+          </label>
         </div>
+      </div>
     </main>
-   
 
-
-    <!-- Goda -->
+    <!-- Script -->
     <script>
         // التحكم في عرض وإخفاء النموذج (Modal)
         const modal = document.getElementById("taskModal");

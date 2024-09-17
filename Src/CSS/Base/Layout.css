@@ -60,8 +60,8 @@ body {
 }
 
 .Sub__Boards:hover {
-  background: #828fa338;
-  color: #635fc7;
+  background: var(--column-color);
+  color: var(--main-color);
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
 }
@@ -70,7 +70,7 @@ body {
   width: 15px;
   height: 15px;
   margin-top: 5px;
-  color: #635fc7;
+  color: var(--main-color);
 }
 
 .Boards__Des {
@@ -79,13 +79,11 @@ body {
 }
 
 .Boards__Des__Add {
-  color: #635fc7;
+  color: var(--main-color);
 }
 
 /* Modes */
-
 .Modes {
-  /* margin-bottom: 3rem; */
   display: flex;
   flex-direction: column;
 }
@@ -93,8 +91,7 @@ body {
 .Mode__Toggle {
   width: 60%;
   margin: 1.5rem;
-  /* margin-bottom: 2rem; */
-  background-color: #f4f7fd;
+  background-color: var(--column-color);
   border-radius: 10px;
   padding: 0.5em 1.1em;
   display: flex;
@@ -116,8 +113,8 @@ body {
 }
 
 .Mode__Hide:hover {
-  background: #828fa338;
-  color: #635fc7;
+  background: var(--column-color);
+  color: var(--main-color);
 }
 
 .page-logo {
@@ -142,7 +139,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.3rem 0;
+  padding: 1.3rem 2rem;
 }
 
 .Header img {
@@ -154,7 +151,8 @@ body {
   height: 20px;
   padding: 0px;
   position: absolute;
-  left: 220px;
+  left: 230px;
+  top: 40px;
 }
 
 .Header img:hover {
@@ -192,7 +190,7 @@ body {
 }
 
 .Title__Header {
-  color: #000112;
+  color: var(--black-color);
   margin: 0rem 0 0 1.5rem;
   font-weight: 700;
 }
@@ -205,7 +203,7 @@ body {
 .Add {
   font-size: 1rem;
   background-color: var(--main-color);
-  color: #fff;
+  color: var(--white-color);
   padding: 0.5em 1.1em;
   border-radius: 50px;
   font-weight: bold;
@@ -225,14 +223,12 @@ body {
   z-index: 1;
 }
 
-/*  MOSTAFA  */
+/* Section  */
 section {
   grid-area: section;
   color: rgba(0, 0, 0, 0.4);
   background-color: var(--column-color);
   margin-top: 1em;
-  /* overflow-x: scroll;
-  overflow-y: hidden; */
   height: 80vh;
 }
 
@@ -252,7 +248,7 @@ section .control-tasks {
 section div {
   position: relative;
   margin-right: 1rem;
-  flex-shrink: 0;
+  min-width: 7rem;
 }
 
 section .last-column {
@@ -295,8 +291,6 @@ section .doing-column::before {
 section .done-column::before {
   background-color: var(--done-color);
 }
-
-/* Goda */
 
 body {
   transition: background-color 0.3s ease;
@@ -439,6 +433,11 @@ select {
   position: relative;
 }
 
+
+/* Media Query */
+
+/* Mobile Mode */
+
 @media (max-width: 480px) {
   .container {
     display: flex;
@@ -453,24 +452,24 @@ select {
     z-index: 555;
     background-color: var(--white-color);
     flex: 0 0 100%;
-    min-width: 100%;
+    max-width: 100%;
     background-image: url(../../assets/Icons/icon-2-add-task-mobile.svg);
     background-repeat: no-repeat;
-    background-position: 20px;
+    background-position: 10px 35px;
   }
 
-  .img-1,
+  /* .img-1 */
   .img-2 {
-    /* display: inline; */
+    display: inline;
   }
 
   .Title__Header {
     padding: 0 2rem;
     position: relative;
+    margin: 0 1.2rem;
   }
 
   .Title__Header::after {
-    /* content: url(../../assets/img/images-3.png); */
     position: absolute;
     top: 0;
     right: 50px;
@@ -478,7 +477,6 @@ select {
     height: 20px;
     padding: 50px;
     z-index: 6666;
-    /* background-image: url(../../assets/img/images-3.png); */
   }
 
   .Wrapper {
@@ -501,6 +499,10 @@ select {
 
   .Add {
     display: none;
+  }
+
+  .Header {
+    padding: 1rem 0;
   }
 
   .Mode__Toggle {
@@ -527,6 +529,8 @@ select {
   }
 }
 
+/* Tablet Mode  */
+
 @media (min-width: 481px) and (max-width: 767px) {
   .container {
     display: flex;
@@ -545,6 +549,7 @@ select {
     background-image: url(../../assets/Icons/icon-2-add-task-mobile.svg);
     background-repeat: no-repeat;
     background-position: 20px;
+    padding: 1rem 2rem;
   }
 
   .img-1,
@@ -553,7 +558,7 @@ select {
   }
 
   .Title__Header {
-    padding: 0 2rem;
+    padding: 0;
   }
 
   .Wrapper {
