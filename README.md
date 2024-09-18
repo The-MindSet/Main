@@ -1,5 +1,5 @@
+```
 
-``
 project/
 │
 ├── src/                   /* Source files */
@@ -24,4 +24,5 @@ project/
 │   │   └── contact-us.html/* Contact Us page */
 │
 └── README.md              /* Project documentation 
-``
+
+```
